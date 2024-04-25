@@ -1,0 +1,704 @@
+@media (max-width: 1024px){
+    .tab-item{
+            width: 200px;
+        }
+        .content-real{
+            &::-webkit-scrollbar {
+                width: 0; /* Đặt chiều rộng của thanh cuộn là 0 */
+            }
+        }
+        .directional-text{
+            font-size: 20px;
+            line-height: 40px;
+        }
+}
+
+// CSS cho màn hình mobile
+@media (max-width: 740px) {
+    .wrapper{
+        padding: 0 10px;
+    }
+    .menu{
+        width: 50%;
+        position: relative;
+        svg{
+            width: 24px;
+            height: 24px;
+            display: block;
+            position: absolute;
+            top: 34px;
+
+        }
+       
+
+    }
+    .menu-item{
+        width: 45%;
+        height: 40%;
+        background: #fff;
+        box-shadow: 2px 2px 4px;
+        display: block;
+       li{
+        height: 45px;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        background-color: #fff;
+        position: relative;
+
+        &:first-child{
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        &:last-child{
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &:hover{
+            ul{
+               width: 100%;
+               left: 50%;
+               background: #fff;
+               ul{
+                left: 0;
+                bottom: -106px;
+               }
+            }
+            
+        }
+
+        
+       }
+       .icon-down{
+        display: none;
+       }
+        
+
+
+
+    }
+    .menu-mobile{
+        top: 75px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        background-color: rgba(125, 125, 125, .8);
+       z-index: 1;
+       display: none;
+
+    }
+    #menu-icon2 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+    .menu-mobile.active {
+        /* CSS cho menu-mobile khi hiển thị */
+        display: block;
+      }
+    .logo{
+        img{
+            width: 33px;
+            height: 33px;
+        }
+        
+    }
+    .mac{
+        font-size: 20px;
+    }
+    .btn-start{
+        width: 80px;
+        height: 33px;
+        font-size: 9px;
+    }
+    .notify{
+        width: 33px;
+        height: 33px;
+
+        img{
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .inner{
+        display: block;
+    }
+    .curve{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .title{
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .Content{
+        font-size: 14px;
+        height: auto;
+        text-align: center;
+    }
+    .btn-a{
+        width: 100%;
+
+        a{
+            font-size: 10px;
+        }
+    }
+    .btn-title{
+        width: 100px;
+        height: 30px;
+        padding: 0;
+        font-size: 9px;
+        gap: 0;
+    }
+    .arrow{
+        img{
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .content-inner{
+        width: 100%;
+        height: 50%;
+    }
+    .dflex{
+        height: 70%;
+        padding-bottom: 20px;
+    }
+    .img-content-inmer{
+        height: 160px;
+    }
+    .trending-up{
+        width: 50px;
+        height: 50px;
+        top: -10px;
+    right: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .credibility{
+        height: 160px;
+        padding: 5px;
+    }
+    .img-credibility{
+        height: 30%;
+    }
+    .Footer-header{
+        width: 100%;
+    }
+    .trust{
+        width: auto;
+        height: auto;
+        font-size: 9px;
+    }
+    .logo-footer-header{
+        width: auto;
+        height: auto;
+
+        span{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .provide{
+            height: 400px;
+
+        &-title{
+            display: block;
+            text-align: center;
+            height: auto;
+            h2{
+                width: 100%;
+            }
+            p{
+                width: 100%;
+                font-size: 12px;
+            }
+
+        }
+        &-content-img2{
+            height: 100%;
+
+
+        }
+    }
+    .group{
+        width: 30px;
+        height: 30px;
+        bottom: -7%;
+      }
+
+
+      .real{
+        padding: 0 10px;
+        height: auto;
+        &-inner{
+            height: auto;
+        }
+
+        &_title{
+            font-size: 24px;
+            line-height: 40px;
+        }
+      }
+      .See-Details{
+        width: 50px;
+        height: 50px;
+        font-size: 9px;
+        font-weight: 500;
+      }
+      .modal{
+        width: 90%;
+        padding: 15px;
+        border-radius: 10px;
+        height: 150px;
+      }
+
+      .tab{
+
+        &-items{
+            width: 500px;
+            padding: 0 10px;
+        }
+
+        &-item{
+            width: 100px;
+            height: 33px;
+            font-size: 9px;
+            padding: 0;
+            display: grid;
+            place-items: center;
+            
+          }
+      }
+      .content{
+        &-real{
+        height: auto;
+      }
+      &-icon{
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        text-align: center;
+        &:first-child{
+            margin-left: 10px;
+        }
+        &:last-child{
+            margin-right: 10px;
+        }
+    }
+    
+    }
+    .text{
+    &-content{
+        width: 90%;
+        top: 16px;
+        left: 7px;
+        img{
+            width: 27px;
+        }
+    }
+    &-app{
+        left: 0;
+        bottom: 0;
+    }
+}
+
+    .directional{
+        height: auto;
+        padding: 40px 0;
+
+         &-text{
+            padding: 0 10px;
+            font-size: 14px;
+            line-height: 25px;
+         }
+         &-michael{
+            width: 100%;
+
+            &-text{
+
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+                div{
+                    height: auto;
+                    p{
+                        font-size: 9px;
+                        line-height: 10px;
+                    }
+                }
+            }
+         }
+
+         &-next{
+            width: 40%;
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
+         }
+    }
+
+    .marketing{
+        padding: 30px 10px;
+        display: block;
+
+        button{
+            width: 100px;
+            height: 33px;
+            font-size: 9px;
+            padding: 0;
+        }
+
+        &-title{
+            width: 100%;
+            text-align: center;
+            span{
+                font-size: 24px;
+                line-height: 0;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        &-text{
+            width: 100%;
+            height: 60%;
+            text-align: center;
+
+            &-items{
+                padding: 10px;
+
+                span{
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+            &-item2{
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .seo{
+
+        padding: 50px 10px;
+
+        &-title{
+            display: block;
+            text-align: center;
+
+            p{
+                width: 100%;
+                font-size: 24px;
+                line-height: 40px;
+            }
+
+            div{
+                width: 100%;
+                font-size: 14px;
+            }
+
+            button{
+                width: 100px;
+                height: 33px;
+                padding: 0;
+            }
+        }
+        &-marketing {
+            display: block;
+
+            &-item{
+                margin-bottom: 15px;
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            &-btn{
+                display: block;
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .footer{
+        height: auto;
+        padding: 10px;
+
+        &-start{
+            height: auto;
+            display: block;
+            padding: 15px 30px;
+
+            p{
+                font-size: 26px;
+                line-height: 40px;
+            }
+            button{
+                width: 100px;
+                height: 33px;
+                padding: 0 5px;
+                font-size: 9px;
+                img{
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+        &-content{
+            height: auto;
+            padding: 0 10px;
+            display: block;
+
+
+            &-infor{
+                width: 100%;
+                div{
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+            
+            &-items{
+                width: 100%;
+            }
+            &-navigation, &-licence, &-contact {
+
+                p{
+                    font-size: 12px;
+                }
+                ul{
+                    font-size: 9px;
+                    img{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+    }
+ 
+
+}
+  
+  
+// CSS cho màn hình tablet
+@media (min-width: 741px) and (max-width: 1024px) {
+        .wrapper{
+            padding: 0 20px;
+        }
+        .wrap-header{
+            height: 600px;
+        }
+        .menu{
+            gap: 10px;
+
+            &-item{
+                gap: 15px;
+            }
+            svg{
+                display: none;
+            }
+        }
+        .icon-down{
+            left: -2px;
+        }
+        .curve{
+            width: 50%;
+            height: 320px;
+        }
+        .content-inner{
+            width: 50%;
+        }
+        .title{
+            width: 100%;
+            height: 150px;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 53px;
+        }
+        .Content{
+            width: 100%;
+        }
+        .content-inner{
+             height: 320px;
+        }
+        .btn-title{
+            width: 200px;
+        }
+        .img-content-inmer{
+            width: 200px;
+            height: 150px;
+            img{
+                width: 200px;
+                height: 150px;
+            }
+            
+            
+        }
+        .credibility{
+            width: 200;
+            height: 150px;
+            padding: 10px;
+            text-align: center;
+
+            &-img{
+                img{
+                    width: 480px;
+                height: 150px;
+                }
+            }
+
+            img{
+                width: 150px;
+            }
+        }
+        .img-credibility{
+            text-align: center;
+            width: 75%;
+        }
+        .content-credibility{
+                width: 100%;
+                font-size: 14px;
+                text-align: center;
+                line-height: 17px;  
+        }
+        .trending-up{
+            right: 0;
+            top: -20px;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+
+        }
+        .Footer-header{
+            width: 70%;
+            left: 0px;
+            top: 355px;
+        }
+
+
+        .provide{
+            height: 500px;
+        }
+        .provide-content{
+            height: 200px;
+            &-img1{
+                width: 25%;
+            }
+            span{
+                width: 65%;
+            }
+            &-img2{
+            width: 100%;
+            height: 100%;
+            }
+
+        }
+        .group{
+            width: 60px;
+            height: 60px;
+            right: -6px;
+            bottom: -15px;
+        }
+        .credibility-img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+
+
+
+        .real{
+            height: 700px;
+
+            &_title{
+                max-width: 100%;
+                font-size: 26px;
+                line-height: 40px;
+            }
+            &-inner{
+                height: 700px;
+            }
+        }
+        .content-icon{
+            width: 300px;
+            height: 300px;
+        }
+        .See-Details{
+            width: 100px;
+            height: 100px;
+            font-size: 14px;
+        }
+
+
+        .marketing{
+            padding: 20px;
+            span{
+                font-size: 30px;
+            }
+
+            &-text-item1{
+                span{
+
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+            &-text-item2{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .seo{
+            
+            
+            &-title{
+                p{
+                    font-size: 35px;
+                    line-height: 50px;
+                }
+            }
+            &-marketing{
+                &::-webkit-scrollbar{
+                    width: 0;
+                }
+            }
+        
+        }
+        .footer{
+            &-start{
+                p{
+                    font-size: 40px;
+                }
+                button{
+                    width: 170px;
+                }
+            }
+            &-content{
+                padding: 0 20px;
+            }
+        
+        }
+        
+
+
+  }
+  
