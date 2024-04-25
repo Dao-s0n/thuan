@@ -35,10 +35,9 @@
   }
   .menu-item li {
     height: 45px;
-    margin: 0;
+    background-color: #fff;
     display: grid;
     place-items: center;
-    background-color: #fff;
     position: relative;
   }
   .menu-item li:first-child {
@@ -50,16 +49,16 @@
     border-bottom-left-radius: 5px;
   }
   .menu-item li:hover ul {
-    width: 100%;
+    width: 150px;
     left: 50%;
+    top: -15px;
     background: #fff;
   }
-  .menu-item li:hover ul ul {
-    left: 0;
-    bottom: -106px;
-  }
   .menu-item .icon-down {
-    display: none;
+    visibility: hidden;
+  }
+  #menu-icon, #menu-icon2 {
+    display: block;
   }
   .menu-mobile {
     top: 75px;
@@ -433,6 +432,9 @@
     gap: 15px;
   }
   .menu svg {
+    display: none;
+  }
+  #menu-icon, #menu-icon2 {
     display: none;
   }
   .icon-down {
