@@ -20,6 +20,7 @@
 
 .wrap-header{
     height: 775px;
+    position: relative;
 }
 .header{
     width: 100%;
@@ -334,8 +335,7 @@
 
 }
 .img-content-inmer{
-    position: relative;
-    width: 45%;
+    width: 281px;
     height: 281px;
     border-radius: 1000px 20px 20px 20px;
     background: #00000033;
@@ -349,7 +349,7 @@
 
 }
 .credibility{
-    width: 45%;
+    width: 281px;
     height: 281px;
     border-radius: 20px ;
     background-color: #f0f0f0;
@@ -653,28 +653,27 @@
     display: grid;
     place-items: center;
 
-    &-content {
-        width: 1440px;
-        display: flex;
-        overflow: auto;
-        overflow-x: hidden; /* Ẩn thanh cuộn ngang */
 
-    }
+    &-content {
+    display: flex;
+    overflow: auto;
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+    width: 100%; /* Đảm bảo `.directional-content` chiếm hết không gian ngang của `.directional` */
+}
 
     &-item {
-        display: flex;
-    
+ p {
+    max-width: 100%;
+    width: 100vw ;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 57.6px;
+    letter-spacing: -0.03em;
+    color: #010205;
+    text-align: center;
+}}
 
-     p {
-        width: 100%;
-        flex-grow: 1;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 57.6px;
-        letter-spacing: -0.03em;
-        color: #010205;
-        float: left;
-    }}
+
 
 
     &-michael {
