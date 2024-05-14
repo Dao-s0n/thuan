@@ -17,6 +17,16 @@
     margin: 0 10px;
   }
 }
+@media (max-width: 500px) {
+  .img-content-inmer {
+    height: 200px !important;
+    width: 200px !important;
+  }
+  .credibility {
+    height: 200px !important;
+    width: 200px !important;
+  }
+}
 @media (max-width: 740px) {
   .wrapper {
     padding: 0 10px;
@@ -164,7 +174,8 @@
     height: 100%;
   }
   .credibility {
-    height: 160px;
+    height: 281px;
+    width: 281px;
     padding: 5px;
   }
   .img-credibility {
@@ -172,6 +183,7 @@
   }
   .Footer-header {
     width: 100%;
+    top: 700px;
   }
   .trust {
     width: auto;
@@ -187,6 +199,9 @@
   }
   .logo-footer-header span img {
     width: 100%;
+  }
+  .wrap-header {
+    height: 850px;
   }
   .provide {
     height: 400px;
@@ -282,6 +297,10 @@
     font-size: 14px;
     line-height: 25px;
   }
+  .directional-item p {
+    font-size: 24px;
+    line-height: 40px;
+  }
   .directional-michael {
     width: 100%;
   }
@@ -370,7 +389,8 @@
   .seo-marketing-item {
     margin-bottom: 15px;
     padding: 10px;
-    width: 100%;
+    width: 500px;
+    height: 500px;
     text-align: center;
   }
   .seo-marketing-btn {
@@ -385,7 +405,6 @@
   }
   .footer-start {
     height: auto;
-    display: block;
     padding: 15px 30px;
   }
   .footer-start p {
@@ -455,7 +474,8 @@
     height: 320px;
   }
   .content-inner {
-    width: 50%;
+    width: 440px;
+    height: 440px;
   }
   .title {
     width: 100%;
@@ -467,23 +487,20 @@
   .Content {
     width: 100%;
   }
-  .content-inner {
-    height: 320px;
-  }
   .btn-title {
     width: 200px;
   }
   .img-content-inmer {
-    width: 281px;
-    height: 281px;
+    width: 240px;
+    height: 240px;
   }
   .img-content-inmer img {
     width: 281px;
     height: 281px;
   }
   .credibility {
-    width: 200;
-    height: 150px;
+    width: 240px;
+    height: 240px;
     padding: 10px;
     text-align: center;
   }
@@ -515,7 +532,7 @@
   .Footer-header {
     width: 70%;
     left: 0px;
-    bottom: 0;
+    top: 445px;
   }
   .provide {
     height: 500px;
@@ -913,6 +930,7 @@
 }
 
 .img-content-inmer {
+  position: relative;
   width: 281px;
   height: 281px;
   border-radius: 1000px 20px 20px 20px;
@@ -923,7 +941,7 @@
   width: 281px;
   height: 281px;
   border-radius: 20px;
-  background-color: #f0f0f0;
+  background-color: #eadbdb;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;

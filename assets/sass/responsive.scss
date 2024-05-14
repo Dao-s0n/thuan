@@ -18,7 +18,16 @@
             margin: 0 10px;
         }
 }
-
+@media (max-width: 500px){
+    .img-content-inmer{
+        height: 200px !important;
+        width: 200px !important;
+    }
+    .credibility{
+        height: 200px !important;
+        width: 200px !important;
+    }
+}
 
 // CSS cho màn hình mobile
 @media (max-width: 740px) {
@@ -177,17 +186,9 @@
     .img-content-inmer{
         height: 281px;
         width: 281px;
+        gap: 20px;
     }
-    .trending-up{
-        width: 50px;
-        height: 50px;
-        top: -10px;
-    right: 0;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
+
     .credibility{
         height: 281px;
         width: 281px;
@@ -220,7 +221,7 @@
         height: 850px;
     }
     .provide{
-            height: 400px;
+            height: 500px;
 
         &-title{
             display: block;
@@ -242,8 +243,8 @@
         }
     }
     .group{
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         bottom: -7%;
       }
 
@@ -547,7 +548,8 @@
             height: 320px;
         }
         .content-inner{
-            width: 50%;
+            width: 440px;
+            height: 440px;
         }
         .title{
             width: 100%;
@@ -559,15 +561,13 @@
         .Content{
             width: 100%;
         }
-        .content-inner{
-             height: 320px;
-        }
+        
         .btn-title{
             width: 200px;
         }
         .img-content-inmer{
-            width: 281px;
-            height: 281px;
+            width: 240px;
+            height: 240px;
             img{
                 width: 281px;
                 height: 281px;
@@ -576,8 +576,8 @@
             
         }
         .credibility{
-            width: 200;
-            height: 150px;
+            width: 240px;
+            height: 240px;
             padding: 10px;
             text-align: center;
 
