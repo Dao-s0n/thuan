@@ -28,10 +28,10 @@
                             <ul class="menu-item">
                                 <li class="item">Service <span class="chevron-down"><span class="icon-down" ><img src="./assets/img/chevron-down.svg" alt=""></span></span> 
                                     <ul>
-                                        <li class="menu-item1">item <div class="menu-item2">
+                                        <li class="menu-item1">item <img src="./assets/img/chevron-down.svg" alt="">  <div class="menu-item2">
         
                                             <ul>
-                                                <li>item</li>
+                                                <li>item </li>
                                                 <li>item</li>
                                                 <li>item</li>
                                             </ul>
@@ -444,6 +444,34 @@
     // Đặt lớp 'selected' cho tab được nhấn
     element.classList.add('selected');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var contentReal = document.querySelector('.content-real');
+    var isMouseDown = false;
+    var startX, scrollLeft;
+
+    contentReal.addEventListener('mousedown', function(e) {
+        isMouseDown = true;
+        startX = e.pageX - contentReal.offsetLeft;
+        scrollLeft = contentReal.scrollLeft;
+    });
+
+    contentReal.addEventListener('mousemove', function(e) {
+        if (!isMouseDown) return;
+        var moveX = e.pageX - contentReal.offsetLeft;
+        var scrollX = moveX - startX;
+        contentReal.scrollLeft = scrollLeft - scrollX;
+    });
+
+    contentReal.addEventListener('mouseup', function() {
+        isMouseDown = false;
+    });
+
+    contentReal.addEventListener('mouseleave', function() {
+        isMouseDown = false;
+    });
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     var seeDetailsBtns = document.querySelectorAll('.See-Details');

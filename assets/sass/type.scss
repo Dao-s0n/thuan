@@ -92,6 +92,16 @@
 
 
 }
+&-item1{
+    position: relative;
+
+    img{
+        position: absolute;
+        right: 0;
+        width: 15Px;
+        height: 15Px;
+    }
+}
    &-item ul{
     text-align: center;
     border-radius: 5px;
@@ -99,14 +109,14 @@
     position: relative;
     z-index: 99999;
     display: none;
-    background: linear-gradient(to bottom, #bbe9dc, #06f736);
+    background: linear-gradient(to bottom, #eaeeed, #a3e6b0);
 
     li{
         height: 33px;
         display: grid;
         place-items: center;
         &:hover{
-            background-color: rgba(0, 0, 0, .03);
+            background-color: rgba(0, 0, 0, .1);
             
         }
         &:first-child{
@@ -127,7 +137,7 @@
         top: 20px;
         display: none;
     }
-
+   
     &-item1:hover &-item2 {
         display: block;
     }
@@ -246,6 +256,7 @@
 
 }
 .title{
+    font: Plus Jakarta Sans;
     width: 100%;
     font-size: 72px;
     font-weight: 600;
@@ -284,8 +295,6 @@
     &-title{
     width: 233px;
     height: 56px;
-    padding: 16px 32px 16px 32px;
-    gap: 42px;
     border-radius: 70px;
     opacity: 0px;
     background: #010205;
@@ -500,6 +509,7 @@
     
 }
     &_title{
+    padding: 0 64Px;
     font-size: 48px;
     font-weight: 600;
     line-height: 62.4px;
@@ -521,9 +531,12 @@
     place-items: center;
 
     &::-webkit-scrollbar {
-        width: 0; /* Chiều rộng của thanh cuộn */
+       height: 5Px;
+
     }
-    
+    &::-webkit-scrollbar-thumb {
+        background: #888; /* Màu của thanh cuộn */
+    }
 
     &-items{
     width: 1016px;
@@ -552,13 +565,10 @@
 
 .content{
     &-real{
-    height: 480px;
-    width: 100%;
-    display: grid;
-    grid-auto-flow: column; /* Xếp các phần tử con ngang */
-    grid-gap: 20px;
-    overflow: auto;
-   
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            overflow-x: hidden;
     
 
 }
@@ -568,6 +578,7 @@
     height: 460px;
     border-radius: 30px;
     border: 10px solid rgba(0, 0, 0, 0.3);
+    display: inline-block;
     background-color: #C3C3C3;
     margin-right: 20px;
     position: relative;
