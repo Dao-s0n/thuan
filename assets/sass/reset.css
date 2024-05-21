@@ -18,9 +18,9 @@ body {
   font-weight: 400;
   line-height: 22px;
   color: #565656;
-  font-family: 'Nunito', sans-serif !important;
+  /* font-family: 'Nunito', sans-serif !important; */
   overflow-x: hidden;
-  font-family: Plus Jakarta Sans;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 a,

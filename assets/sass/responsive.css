@@ -32,12 +32,12 @@
   }
   .credibility {
     height: 200px !important;
-    width: 200px !important;
+    width: 180px !important;
   }
 }
 @media (max-width: 740px) {
   .wrapper {
-    padding: 0 10px;
+    padding: 0 20px;
   }
   .menu {
     width: 50%;
@@ -53,6 +53,7 @@
   .menu-item {
     width: 45%;
     height: 65%;
+    background: linear-gradient(to bottom, #eaeeed, #a3e6b0);
     box-shadow: 2px 2px 4px;
     display: block;
   }
@@ -80,7 +81,7 @@
     visibility: hidden;
   }
   #menu-icon, #menu-icon2 {
-    display: block;
+    display: block !important;
   }
   .menu-mobile {
     top: 75px;
@@ -492,7 +493,7 @@
   }
   .curve {
     width: 50%;
-    height: 320px;
+    height: 380px;
   }
   .content-inner {
     width: 440px;
