@@ -16,6 +16,14 @@
   .marketing {
     margin: 0 10px;
   }
+  #menu-icon {
+    display: none !important;
+  }
+}
+@media (min-width: 1440px) {
+  #menu-icon {
+    display: none !important;
+  }
 }
 @media (max-width: 500px) {
   .img-content-inmer {
@@ -44,8 +52,7 @@
   }
   .menu-item {
     width: 45%;
-    height: 40%;
-    background: linear-gradient(to bottom, #bbe9dc, #06f736);
+    height: 65%;
     box-shadow: 2px 2px 4px;
     display: block;
   }
@@ -65,7 +72,6 @@
     border-bottom-left-radius: 5px;
   }
   .menu-item li:hover ul {
-    background: linear-gradient(to bottom, #bbe9dc, #20757e);
     width: 150px;
     left: 50%;
     top: -15px;
@@ -276,8 +282,9 @@
     width: 27px;
   }
   .text-app {
-    left: 0;
-    bottom: 0;
+    left: 8px;
+    bottom: 10px;
+    font-size: 11Px;
   }
   .directional {
     height: auto;
@@ -438,6 +445,29 @@
     height: 14px;
   }
 }
+@media (min-width: 1250px) and (max-width: 1350px) {
+  .img-content-inmer {
+    width: 260Px;
+    height: 260Px;
+  }
+  .credibility {
+    width: 260Px;
+    height: 260px;
+  }
+  #menu-icon {
+    display: none !important;
+  }
+}
+@media (min-width: 1020px) and (max-width: 1250px) {
+  .img-content-inmer {
+    width: 240Px;
+    height: 240Px;
+  }
+  .credibility {
+    width: 240Px;
+    height: 240px;
+  }
+}
 @media (min-width: 741px) and (max-width: 1024px) {
   .wrapper {
     padding: 0 20px;
@@ -455,7 +485,7 @@
     display: none;
   }
   #menu-icon, #menu-icon2 {
-    display: none;
+    display: none !important;
   }
   .icon-down {
     left: -2px;
@@ -482,16 +512,16 @@
     width: 200px;
   }
   .img-content-inmer {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
   }
   .img-content-inmer img {
-    width: 281px;
-    height: 281px;
+    width: 220px;
+    height: 220px;
   }
   .credibility {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
     padding: 10px;
     text-align: center;
   }
@@ -903,7 +933,7 @@
 }
 
 .content-inner {
-  width: 45%;
+  width: 588px;
   height: 547px;
   display: flex;
   flex-direction: column;
@@ -930,14 +960,14 @@
 
 .img-content-inmer {
   position: relative;
-  width: 281px;
-  height: 281px;
+  width: 303px;
+  height: 275px;
   border-radius: 1000px 20px 20px 20px;
   background: rgba(0, 0, 0, 0.2);
 }
 
 .credibility {
-  width: 281px;
+  width: 259px;
   height: 281px;
   border-radius: 20px;
   background-color: #eadbdb;
