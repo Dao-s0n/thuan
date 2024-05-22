@@ -28,11 +28,11 @@
 @media (max-width: 500px) {
   .img-content-inmer {
     height: 200px !important;
-    width: 200px !important;
+    width: 50% !important;
   }
   .credibility {
     height: 200px !important;
-    width: 180px !important;
+    width: 45% !important;
   }
 }
 @media (max-width: 740px) {
@@ -745,7 +745,6 @@
 }
 .menu-item ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  color: #fff;
 }
 .menu-item ul li:first-child {
   margin-top: 0;
@@ -800,7 +799,6 @@
 .btn-start {
   width: 156px;
   height: 48px;
-  padding: 13px 16px 13px 16px;
   gap: 32px;
   border-radius: 50px;
   border: 1px solid #010205;
@@ -1135,7 +1133,7 @@
   place-items: center;
 }
 .tab::-webkit-scrollbar {
-  height: 5Px;
+  height: 3Px;
 }
 .tab::-webkit-scrollbar-thumb {
   background: #888; /* Màu của thanh cuộn */
@@ -1168,7 +1166,12 @@
   width: 100%;
   overflow-x: auto;
   white-space: nowrap;
-  overflow-x: hidden;
+}
+.content-real::-webkit-scrollbar {
+  height: 3Px;
+}
+.content-real::-webkit-scrollbar-thumb {
+  background: #888; /* Màu của thanh cuộn */
 }
 .content-icon {
   width: 460px;

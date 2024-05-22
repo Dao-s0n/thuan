@@ -28,11 +28,11 @@
 @media (max-width: 500px) {
   .img-content-inmer {
     height: 200px !important;
-    width: 200px !important;
+    width: 50% !important;
   }
   .credibility {
     height: 200px !important;
-    width: 180px !important;
+    width: 45% !important;
   }
 }
 @media (max-width: 740px) {
@@ -168,12 +168,12 @@
   }
   .img-content-inmer {
     height: 281px;
-    width: 281px;
+    width: 50%;
     gap: 20px;
   }
   .credibility {
     height: 281px;
-    width: 281px;
+    width: 45%;
     padding: 5px;
   }
   .img-credibility {
@@ -513,15 +513,11 @@
     width: 200px;
   }
   .img-content-inmer {
-    width: 220px;
-    height: 220px;
-  }
-  .img-content-inmer img {
-    width: 220px;
+    width: 50%;
     height: 220px;
   }
   .credibility {
-    width: 220px;
+    width: 45%;
     height: 220px;
     padding: 10px;
     text-align: center;

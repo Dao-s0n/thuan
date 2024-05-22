@@ -101,6 +101,7 @@
         width: 15Px;
         height: 15Px;
     }
+    
 }
    &-item ul{
     text-align: center;
@@ -117,7 +118,6 @@
         place-items: center;
         &:hover{
             background-color: rgba(0, 0, 0, .1);
-            color: #fff;
         }
         &:first-child{
             margin-top: 0;
@@ -136,6 +136,7 @@
         right: -78px;
         top: 20px;
         display: none;
+
     }
    
     &-item1:hover &-item2 {
@@ -162,6 +163,7 @@
     position: relative;
     width: 20px;
     height: 20px;
+    
 }
 .icon-down{
     position: absolute;
@@ -180,7 +182,6 @@
     &-start{
     width: 156px;
     height: 48px;
-    padding: 13px 16px 13px 16px;
     gap: 32px;
     border-radius: 50px;
     border: 1px solid #010205;
@@ -530,7 +531,7 @@
     place-items: center;
 
     &::-webkit-scrollbar {
-       height: 5Px;
+       height: 3Px;
 
     }
     &::-webkit-scrollbar-thumb {
@@ -567,8 +568,13 @@
             width: 100%;
             overflow-x: auto;
             white-space: nowrap;
-            overflow-x: hidden;
-    
+            &::-webkit-scrollbar {
+                height: 3Px;
+         
+             }
+             &::-webkit-scrollbar-thumb {
+                 background: #888; /* Màu của thanh cuộn */
+             }
 
 }
 
