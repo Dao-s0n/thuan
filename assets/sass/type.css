@@ -745,6 +745,7 @@
 }
 .menu-item ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 .menu-item ul li:first-child {
   margin-top: 0;
