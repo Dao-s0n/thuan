@@ -168,12 +168,12 @@
   }
   .img-content-inmer {
     height: 281px;
-    width: 281px;
+    width: 50%;
     gap: 20px;
   }
   .credibility {
     height: 281px;
-    width: 281px;
+    width: 45%;
     padding: 5px;
   }
   .img-credibility {
@@ -513,15 +513,11 @@
     width: 200px;
   }
   .img-content-inmer {
-    width: 220px;
-    height: 220px;
-  }
-  .img-content-inmer img {
-    width: 220px;
+    width: 50%;
     height: 220px;
   }
   .credibility {
-    width: 220px;
+    width: 45%;
     height: 220px;
     padding: 10px;
     text-align: center;
@@ -637,7 +633,7 @@
 }
 .body {
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -969,7 +965,8 @@
   width: 259px;
   height: 281px;
   border-radius: 20px;
-  background-color: #eadbdb;
+  background-color: #f0f0f0;
+  box-shadow: 1Px 1px 1px #888;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;

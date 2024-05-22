@@ -3,7 +3,7 @@
 
 .body{
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -362,7 +362,8 @@
     width: 259px;
     height: 281px;
     border-radius: 20px ;
-    background-color: #eadbdb;
+    background-color: #f0f0f0;
+    box-shadow: 1Px 1px 1px  #888;
     padding:30px 20px;
     display: flex;
     flex-direction: column;
